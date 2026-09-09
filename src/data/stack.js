@@ -11,7 +11,7 @@ export const SKILL_GROUPS = [
     label: 'Lenguajes & frameworks',
     icon: 'coffee',
     skills: [
-      'Java 6–21',
+      'Java 7–21',
       'Spring Boot',
       'Spring Framework',
       'Quarkus',
