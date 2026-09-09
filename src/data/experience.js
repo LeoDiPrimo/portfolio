@@ -11,12 +11,13 @@ export const EXPERIENCE = [
     company: 'Mercado Libre',
     period: 'Abr 2024 — May 2026',
     summary:
-      'Proyecto de Gestión de Precios, centrado en la actualización y automatización de precios de las publicaciones del marketplace.',
+      'Proyecto de Gestión de Precios: actualización y automatización de precios de publicaciones del marketplace.',
     highlights: [
       'Desarrollé funcionalidades backend para la automatización de precios: definición de reglas, cálculo de ganancias y márgenes por producto, visualización de promociones y porcentaje de ventas automatizadas por vendedor.',
-      'Construí en Go servicios expuestos a través de Mercado Libre Developers, permitiendo a integradores externos consumir información de las automatizaciones.',
-      'Implementé métricas y monitoreo de las automatizaciones, mejorando la observabilidad y la detección temprana de incidentes.',
-      'Desarrollé servicios backend para obtener y procesar los precios de la competencia, dando soporte a la estrategia de pricing.',
+      'Diseñé y desarrollé en Go las APIs públicas de automatizaciones de precios en Mercado Libre Developers, utilizadas por integradores externos y soportando picos de ~100k requests por minuto.',
+      'Instrumenté las automatizaciones con OpenTelemetry y definí monitores en Datadog integrados con Opsgenie, que alertan al equipo de guardia cuando un servicio supera sus umbrales de error.',
+      'Construí los servicios backend que obtienen y procesan los precios de la competencia para alimentar las sugerencias mostradas al vendedor.',
+      'Cubrí la rotación de guardias del equipo y resolví incidentes de producción en procesos críticos de pricing.',
     ],
     stack: [
       'Java 17/21',
@@ -29,7 +30,9 @@ export const EXPERIENCE = [
       'BigQuery',
       'Datadog',
       'Kibana',
+      'Opsgenie',
       'OpenTelemetry',
+      'Fury',
     ],
   },
   {
@@ -39,11 +42,12 @@ export const EXPERIENCE = [
     client: 'OSDE',
     period: 'May 2022 — Abr 2024',
     summary:
-      'Workflow de contacto con clientes: clasificación y distribución de consultas médicas, recetas y autorizaciones.',
+      'Workflow de atención al afiliado: clasificación y derivación de consultas médicas, recetas y autorizaciones.',
     highlights: [
-      'Desarrollé servicios backend para la clasificación y distribución automática de consultas recibidas por web y correo electrónico, garantizando la trazabilidad del trámite mediante registro de responsables, comentarios y archivos adjuntos.',
-      'Implementé nuevas funcionalidades y brindé soporte y mantenimiento continuo, resolviendo incidencias sobre funcionalidades existentes.',
-      'Migré el backend de varias aplicaciones legacy en Java hacia Quarkus y reconstruí sus frontends en React en reemplazo de JSP, mejorando el rendimiento y la mantenibilidad.',
+      'Desarrollé servicios backend para automatizar la clasificación y distribución de consultas recibidas por web y correo electrónico, con trazabilidad y auditoría completa del trámite: responsables, comentarios y archivos adjuntos.',
+      'Migré a Quarkus el backend de 4 aplicaciones legacy desarrolladas en Java, reduciendo el consumo de memoria en torno a un 20% y mejorando los tiempos de arranque.',
+      'Reconstruí en React los frontends de las aplicaciones existentes en JSP, desacoplándolos del backend y adaptándolos a la nueva arquitectura basada en microservicios.',
+      'Implementé nuevas funcionalidades y resolví incidentes de producción en las aplicaciones existentes.',
     ],
     stack: [
       'Java 6/8/11',
@@ -65,9 +69,10 @@ export const EXPERIENCE = [
     company: 'Eldar',
     client: 'Fiserv',
     period: 'Ago 2021 — May 2022',
-    summary: 'Procesamiento de medios de pago.',
+    summary: 'Plataforma de procesamiento de medios de pago.',
     highlights: [
-      'Desarrollé y mantuve microservicios para la gestión de transacciones de pago originadas en terminales POS, garantizando la continuidad de procesos críticos del negocio.',
+      'Desarrollé y mantuve microservicios para procesar transacciones originadas en terminales POS, dentro de procesos críticos del negocio.',
+      'Creé y publiqué en Apigee los proxies de API que exponen los microservicios de pago a las aplicaciones consumidoras.',
     ],
     stack: [
       'Java 8',
@@ -86,11 +91,11 @@ export const EXPERIENCE = [
     company: 'BPMX',
     client: 'Garbarino',
     period: 'Nov 2018 — Ago 2021',
-    summary: 'Áreas de shipping y stock dentro del proceso logístico de envíos.',
+    summary: 'Logística de envíos: movimiento de stock entre sucursales y despacho a domicilio.',
     highlights: [
-      'Desarrollé funcionalidades backend para la gestión y el movimiento de mercadería entre depósitos de sucursales y hacia el domicilio del cliente.',
-      'Implementé validaciones de stock para determinar la sucursal de origen de cada producto, garantizando consistencia entre el inventario disponible y los envíos generados.',
-      'Desarrollé páginas internas para que los empleados de sucursal pudieran seguir envíos (fechas, estados, movimientos de stock) y gestionar pedidos de clientes.',
+      'Desarrollé servicios backend para gestionar el movimiento de mercadería entre depósitos de sucursales y el despacho a domicilio del cliente.',
+      'Implementé las validaciones de stock que determinan la sucursal de origen de cada producto para mantener la consistencia entre el inventario disponible y los envíos generados.',
+      'Construí las pantallas internas utilizadas por los empleados de sucursal para consultar el estado de los envíos, movimientos de stock y gestionar pedidos de clientes.',
     ],
     stack: [
       'Java 7/8',

@@ -10,7 +10,7 @@ export default function Stack() {
     <Section
       id="stack"
       title="Stack & habilidades"
-      subtitle="Tecnologías con las que trabajo a diario."
+      subtitle="Tecnologías con las que trabajo."
     >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {SKILL_GROUPS.map((group) => {

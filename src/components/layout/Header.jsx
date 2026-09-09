@@ -49,9 +49,11 @@ export default function Header() {
         <a
           href="#top"
           aria-label="Inicio"
-          className="group flex shrink-0 items-center transition-transform duration-300 group-hover:scale-110 motion-reduce:transform-none"
+          className="group flex shrink-0 items-center"
         >
-          <BrandMark />
+          <span className="transition-transform duration-300 group-hover:scale-110 motion-reduce:transition-none">
+            <BrandMark />
+          </span>
         </a>
 
         <nav aria-label="Navegación principal" className="hidden md:block">
