@@ -1,43 +1,41 @@
 /**
  * Skills grouped by category, mirroring the CV.
+ *
  * `icon` is a key of STACK_ICONS — decorative, rendered `aria-hidden`.
+ * Within a group, skills are ordered by weight in the profile: the core first,
+ * legacy last, keeping related tech adjacent.
  */
 export const SKILL_GROUPS = [
   {
     id: 'languages',
-    label: 'Lenguajes',
+    label: 'Lenguajes & frameworks',
     icon: 'coffee',
-    skills: ['Java 6–21', 'Go', 'SQL'],
-  },
-  {
-    id: 'frameworks',
-    label: 'Frameworks',
-    icon: 'leaf',
-    skills: ['Spring Boot', 'Spring Framework', 'Quarkus'],
+    skills: [
+      'Java 6–21',
+      'Spring Boot',
+      'Spring Framework',
+      'Quarkus',
+      'Go',
+      'SQL',
+    ],
   },
   {
     id: 'architecture',
     label: 'Arquitecturas',
     icon: 'landmark',
-    skills: ['Microservicios', 'APIs REST', 'SOAP'],
+    skills: ['Microservicios', 'APIs REST', 'Apigee', 'SOAP'],
   },
   {
     id: 'databases',
     label: 'Bases de datos',
     icon: 'database',
-    skills: ['MySQL', 'SQL Server', 'Oracle', 'DB2', 'BigQuery'],
+    skills: ['MySQL', 'SQL Server', 'Oracle', 'BigQuery', 'MongoDB', 'DB2'],
   },
   {
-    id: 'testing',
-    label: 'Testing',
+    id: 'quality',
+    label: 'Testing & observabilidad',
     icon: 'flask',
-    skills: ['JUnit', 'Mockito'],
-  },
-  {
-    id: 'observability',
-    label: 'Observabilidad',
-    icon: 'chart',
-    skills: ['Datadog', 'Kibana', 'OpenTelemetry'],
+    skills: ['JUnit', 'Mockito', 'Cypress', 'Datadog', 'Kibana', 'OpenTelemetry'],
   },
   {
     id: 'devops',
@@ -50,7 +48,6 @@ export const SKILL_GROUPS = [
       'TeamCity',
       'Maven',
       'Gradle',
-      'Apigee',
       'Git',
       'GCP',
     ],

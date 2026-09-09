@@ -15,7 +15,7 @@ export default function Section({ id, eyebrow, title, subtitle, className, child
     <section
       id={id}
       aria-labelledby={headingId}
-      className={cn('py-16 md:py-20', className)}
+      className={cn('py-10 md:py-14', className)}
     >
       <Container>
         <SectionHead

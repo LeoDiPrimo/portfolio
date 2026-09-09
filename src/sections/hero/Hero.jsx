@@ -28,8 +28,8 @@ export default function Hero() {
 
           {PROFILE.summary.length > 0 && (
             <div className="mt-5 max-w-[52ch] space-y-4 text-base text-pretty text-muted md:text-lg">
-              {PROFILE.summary.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
+              {PROFILE.summary.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
               ))}
             </div>
           )}
