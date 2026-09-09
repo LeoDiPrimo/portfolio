@@ -1,16 +1,31 @@
-# React + Vite
+# Leo Di Primo — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Single-page portfolio built with React 19, Vite 8 and Tailwind CSS v4.
 
-Currently, two official plugins are available:
+Live site: https://leonardodiprimo-portfolio.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting started
 
-## React Compiler
+```bash
+npm install
+npm run dev      # dev server with HMR at http://localhost:5173
+npm run build    # production build to dist/
+npm run preview  # serve dist/ locally
+npm run lint     # ESLint over the whole repo
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Structure
 
-## Expanding the ESLint configuration
+```
+src/
+  data/         all site content as exported constants
+  sections/     one folder per page section
+  components/   layout and UI primitives, plus icons
+  hooks/        custom hooks (theme, scroll, reveal)
+  lib/          helpers
+  index.css     Tailwind setup + theme tokens
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+
+All rights reserved.
